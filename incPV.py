@@ -68,7 +68,6 @@ def Proxy_read(proxy_list, user_agent_list, i):
     req = request.Request(r'https://mingmingcome.github.io/2017/03/11/%E5%85%B3%E4%BA%8E%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%AE%B0%E5%BF%86/',headers=headers)
     try:
         html = request.urlopen(req).read().decode('utf-8')
-        print(html)
     except Exception as e:
         print('******打开失败！******')
     else:
